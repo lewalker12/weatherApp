@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Run `npm install` to build the `/node_modules` directory.
+
 Run `ng start` to start the frontent. 
 
 To start the server, run `nodemon server.ts`. 
