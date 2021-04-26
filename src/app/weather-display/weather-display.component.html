@@ -1,0 +1,13 @@
+<ng-container *ngIf="!isLoading">
+    <div class="display">
+        <div class="location">
+            {{ data.request.query }}
+        </div>
+        <div class="description">
+            <img [src]="data.current.weather_icons" [alt]=data.current.weather_details>
+            <div>
+                {{ data.current.weather_descriptions }}
+            </div>
+        </div>
+    </div>
+</ng-container>

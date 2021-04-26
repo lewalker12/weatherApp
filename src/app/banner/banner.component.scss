@@ -1,0 +1,21 @@
+.banner {
+    color: #efebb7;
+    font-size: 75px;
+    font-family: monospace;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #efebb7;
+    color: #94bce4;
+    border: none;
+}
+
+.align-right {
+    padding-right: 25px;
+}

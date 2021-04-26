@@ -1,0 +1,33 @@
+<banner-component></banner-component>
+
+<ng-container *ngIf="!signedIn">
+  <div class="signIn">
+    <div class="label">Username</div>
+    <input #login
+        type="text"
+        class="login"
+        placeholder="Input your Username"/>
+    <button class="submit" (click)="signInUser(login.value)"> Sign In</button>
+</div></ng-container>
+
+<ng-container *ngIf="signedIn">
+  <div class="row">
+    <div class="search">Search for Weather</div>
+    <div class="col-md-2">
+      <input #search
+        class="location"
+        type="text"
+        placeholder="Input a Location"/>
+      <button class="submit" (click)="addLocation(search.value)"> Add Location</button>
+    </div>
+  </div>
+  
+  <ng-container *ngFor="let location of locations">
+    <div class="box">
+      <weather-display-component
+        [location]="location"
+      ></weather-display-component>
+    </div>
+  
+  </ng-container>
+</ng-container>

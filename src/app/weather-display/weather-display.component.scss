@@ -1,0 +1,26 @@
+.display {
+    float: left;
+    width: 250px;
+    min-height: 155px;
+    background-color: #94bce4;
+    border: 5px solid grey;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.location {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    color: #efebb7;
+    padding: 20px;
+}
+
+.description {
+    text-align: center;
+    font-family: monospace;
+    font-size: small;
+    font-weight: bold;
+}
